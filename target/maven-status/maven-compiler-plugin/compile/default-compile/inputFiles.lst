@@ -1,0 +1,15 @@
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/config/SecurityConfiguration.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/controller/AskerController.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/domain/Poll.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/domain/Registration.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/service/CustomUserDetailsService.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/repository/OptionRepository.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/repository/PollRepository.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/domain/Option.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/repository/AskerRepository.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/profile/ProductionProfile.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/controller/PollController.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/controller/DefaultController.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/KyselykoneApplication.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/controller/RegistrationController.java
+/home/pzanni/Wepa-harkkatyo/kyselykone/Kyselykone/src/main/java/wad/domain/Asker.java

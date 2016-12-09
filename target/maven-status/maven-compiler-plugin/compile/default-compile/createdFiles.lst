@@ -1,0 +1,15 @@
+wad/controller/DefaultController.class
+wad/config/SecurityConfiguration.class
+wad/profile/ProductionProfile.class
+wad/repository/AskerRepository.class
+wad/domain/Option.class
+wad/controller/AskerController.class
+wad/repository/OptionRepository.class
+wad/controller/PollController.class
+wad/domain/Registration.class
+wad/controller/RegistrationController.class
+wad/service/CustomUserDetailsService.class
+wad/KyselykoneApplication.class
+wad/domain/Asker.class
+wad/domain/Poll.class
+wad/repository/PollRepository.class
