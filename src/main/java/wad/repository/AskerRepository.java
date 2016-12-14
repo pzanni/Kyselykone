@@ -6,5 +6,5 @@ import wad.domain.Asker;
 
 
 public interface AskerRepository extends JpaRepository<Asker, Long>{
-    
+    Asker findByUsername(String username);
 }

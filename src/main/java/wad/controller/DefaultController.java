@@ -3,12 +3,15 @@ package wad.controller;
 
 import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import wad.domain.Asker;
 import wad.domain.Option;
 import wad.domain.Poll;
 import wad.repository.AskerRepository;
+import wad.repository.CategoryRepository;
 import wad.repository.OptionRepository;
 import wad.repository.PollRepository;
 
@@ -22,6 +25,8 @@ public class DefaultController {
     AskerRepository askerRepo;
     @Autowired
     OptionRepository optionRepo;
+    @Autowired
+    CategoryRepository categoryRepo;
     
     @PostConstruct
     public void init() {
@@ -52,11 +57,15 @@ public class DefaultController {
             optionRepo.save(option);
             optionRepo.save(option2); 
             pollRepo.save(poll);
+            
+            Poll poll2 = new Poll();
+            poll2.setTitle("Paras ohjelmointikieli");
+            pollRepo.save(poll2);
         }
     }
     
     @RequestMapping("*")
     public String handleDefault() {
-        return "redirect:/";
+        return "redirect:/polls";
     }
 }
