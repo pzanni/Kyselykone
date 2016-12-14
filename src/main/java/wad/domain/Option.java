@@ -10,7 +10,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 public class Option extends AbstractPersistable<Long>{
     
     private String content;
-    private Integer votes;
+    private String votes;
     @ManyToOne
     private Poll poll;
     
@@ -26,12 +26,14 @@ public class Option extends AbstractPersistable<Long>{
         content = c;
     }
     
-    public int getVotes() {
+    public String getVotes() {
         return votes;
     }
     
     public void addVote() {
-        votes++;
+        Integer vot = Integer.parseInt(votes);
+        vot++;
+        votes = vot.toString();
     }
     
     public Poll getPoll() {

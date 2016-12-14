@@ -4,6 +4,7 @@ package wad.domain;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
@@ -13,7 +14,7 @@ public class Category extends AbstractPersistable<Long>{
     
     private String name;
     @OneToMany
-    private List<Poll> polls;;
+    private List<Poll> polls;
     
     public Category() {
         polls = new ArrayList();

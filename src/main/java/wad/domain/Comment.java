@@ -2,13 +2,17 @@
 package wad.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 @Entity
 public class Comment extends AbstractPersistable<Long> {
     
     private String content;
+    @ManyToOne
     private Asker asker;
+    @ManyToOne
     private Poll poll;
     
     public Comment() {

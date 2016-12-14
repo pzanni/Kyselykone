@@ -17,6 +17,7 @@ public class Poll extends AbstractPersistable<Long>{
     @OneToMany
     private List<Option> options;
     
+    
     public Poll() {
         options = new ArrayList();
     }

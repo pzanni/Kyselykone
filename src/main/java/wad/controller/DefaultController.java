@@ -47,13 +47,18 @@ public class DefaultController {
             
             Option option2 = new Option();
             option.setContent("kaalilaatikko");
+            
+            Option option3 = new Option();
+            option.setContent("pitsa");
          
             pollRepo.save(poll);
             option.setPoll(poll);
             optionRepo.save(option);
             optionRepo.save(option2);
+            optionRepo.save(option3);
             poll.addOption(option);
             poll.addOption(option2);
+            poll.addOption(option3);
             optionRepo.save(option);
             optionRepo.save(option2); 
             pollRepo.save(poll);
