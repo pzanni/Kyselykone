@@ -45,6 +45,11 @@ public class PollController {
     public String poll(Model model, @PathVariable Long id) {
         model.addAttribute("poll", pollRepo.findOne(id));
         model.addAttribute("options", pollRepo.findOne(id).getOptions());
+        
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String username = auth.getName();
+        
+        model.addAttribute("asker", askerRepo.findByUsername(username));
         return "poll";
     }
     

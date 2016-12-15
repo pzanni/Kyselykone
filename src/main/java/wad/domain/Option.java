@@ -15,7 +15,7 @@ public class Option extends AbstractPersistable<Long>{
     private Poll poll;
     
     public Option() {
-        
+        votes = "0";
     }
 
     public String getContent() {

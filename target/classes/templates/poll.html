@@ -39,7 +39,7 @@
                             <h4><span th:text="${option.content}">subject</span></h4>
                         </td>
                         <td>
-                            
+                            <a th:href="@{/options/{id}/vote(id=${option.id})}" class="btn btn-default" role="button">Vote</a>
                         </td>
                         <td>
                             <h4><span th:text="${option.votes}">subject</span></h4>

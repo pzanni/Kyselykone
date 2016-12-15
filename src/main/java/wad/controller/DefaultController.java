@@ -46,10 +46,10 @@ public class DefaultController {
             //option.addVote();
             
             Option option2 = new Option();
-            option.setContent("kaalilaatikko");
+            option2.setContent("kaalilaatikko");
             
             Option option3 = new Option();
-            option.setContent("pitsa");
+            option3.setContent("pitsa");
          
             pollRepo.save(poll);
             option.setPoll(poll);
@@ -66,6 +66,9 @@ public class DefaultController {
             Poll poll2 = new Poll();
             poll2.setTitle("Paras ohjelmointikieli");
             pollRepo.save(poll2);
+            
+            option3.addVote();
+            optionRepo.save(option3);
         }
     }
     
