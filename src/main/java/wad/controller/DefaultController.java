@@ -8,6 +8,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import wad.domain.Asker;
+import wad.domain.Category;
 import wad.domain.Option;
 import wad.domain.Poll;
 import wad.repository.AskerRepository;
@@ -69,6 +70,11 @@ public class DefaultController {
             
             option3.addVote();
             optionRepo.save(option3);
+            
+            Category category = new Category();
+            category.setName("ohjelmointi");
+            categoryRepo.save(category);
+            
         }
     }
     

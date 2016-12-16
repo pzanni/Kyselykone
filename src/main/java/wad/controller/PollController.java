@@ -55,6 +55,7 @@ public class PollController {
     
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String addpoll(Model model) {
+        model.addAttribute("categories", categoryRepo.findAll());
         return "addpoll";
     }
     
