@@ -6,5 +6,5 @@ Tekijä: Anni Puurunen (pzanni)
 ###https://sheltered-bastion-52407.herokuapp.com
 
 ###Tunnukset sisäänkirjautumiseen:
-*Käyttäjä: milla
-*Salasana: milla
+* Käyttäjä: milla
+* Salasana: milla
