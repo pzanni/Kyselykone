@@ -4,11 +4,15 @@ package wad.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+import org.hibernate.validator.constraints.Length;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 @Entity
 public class Option extends AbstractPersistable<Long>{
     
+    @NotNull
+    @Length(min=1, max = 100)
     private String content;
     private String votes;
     @ManyToOne

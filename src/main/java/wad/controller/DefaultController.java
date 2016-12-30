@@ -36,55 +36,46 @@ public class DefaultController {
             asker.setUsername("milla");
             asker.setPassword("milla");
             asker.addAuthority("USER");
-            askerRepo.save(asker);
+            asker = askerRepo.save(asker);
+            
+            Category category = new Category();
+            category.setName("Ohjelmointi");
+            category = categoryRepo.save(category);
+            Category category2 = new Category();
+            category2.setName("Politiikka");
+            category2 = categoryRepo.save(category2);
             
             Poll poll = new Poll();
             poll.setAsker(asker);
-            poll.setTitle("Paras unicafe ateria");
+            poll.setTitle("Paras ohjelmointikieli");
+            poll = pollRepo.save(poll);
+            Poll poll2 = new Poll();
+            poll2.setAsker(asker);
+            poll2.setTitle("Paras unicafe ruoka");
+            poll2 = pollRepo.save(poll2);
             
             Option option = new Option();
-            option.setContent("vegepuikot");
             option.setPoll(poll);
-            //option.addVote();
-            
+            option.setContent("Java");
+            option = optionRepo.save(option);
             Option option2 = new Option();
-            option2.setContent("kaalilaatikko");
+            option2.setContent("Vegepuikot");
+            option2.setPoll(poll2);
+            option2 = optionRepo.save(option2);
             
-            Option option3 = new Option();
-            option3.setContent("pitsa");
-         
-            pollRepo.save(poll);
-            option.setPoll(poll);
-            optionRepo.save(option);
-            optionRepo.save(option2);
-            optionRepo.save(option3);
+            category.addPoll(poll);
+            categoryRepo.save(category);
+            category2.addPoll(poll2);
+            categoryRepo.save(category2);
+            
             poll.addOption(option);
-            poll.addOption(option2);
-            poll.addOption(option3);
-            optionRepo.save(option);
-            optionRepo.save(option2); 
             pollRepo.save(poll);
-            
-            Poll poll2 = new Poll();
-            poll2.setTitle("Paras ohjelmointikieli");
+            poll2.addOption(option2);
             pollRepo.save(poll2);
             
-            option3.addVote();
-            optionRepo.save(option3);
-            
-            Category category = new Category();
-            category.setName("ohjelmointi");
-            categoryRepo.save(category);
-            
-            category.addPoll(poll2);
-            categoryRepo.save(category);
-            
-            Category category2 = new Category();
-            category2.setName("tarzan");
-            categoryRepo.save(category2);
-            
-            category2.addPoll(poll);
-            categoryRepo.save(category2);
+            Category category3 = new Category();
+            category3.setName("Elokuvat ja tv-sarjat");
+            categoryRepo.save(category3);
         }
     }
     

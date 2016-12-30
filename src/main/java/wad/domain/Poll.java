@@ -4,6 +4,7 @@ package wad.domain;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import org.hibernate.validator.constraints.Length;
@@ -19,10 +20,13 @@ public class Poll extends AbstractPersistable<Long>{
     @OneToMany
     private List<Option> options;
     private String maker;
+    @ManyToMany(mappedBy = "polls")
+    private List<Category> categories;
     
     
     public Poll() {
         options = new ArrayList();
+        categories = new ArrayList();
     }
     
     public String getTitle() {
@@ -53,4 +57,13 @@ public class Poll extends AbstractPersistable<Long>{
     public void addOption(Option o) {
         options.add(o);
     }
+    
+    public List<Category> getCategories() {
+        return categories;
+    }
+    
+    public void addCategory(Category c) {
+        categories.add(c);
+    }
+
 }

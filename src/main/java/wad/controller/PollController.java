@@ -37,6 +37,8 @@ public class PollController {
         model.addAttribute("polls", pollRepo.findAll());
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         model.addAttribute("insider", auth.getName());
+        model.addAttribute("loggedin", !auth.getName().equals("anonymousUser"));
+
         return "index";
     }
     
@@ -45,12 +47,12 @@ public class PollController {
         model.addAttribute("poll", pollRepo.findOne(id));
         model.addAttribute("options", pollRepo.findOne(id).getOptions());
         
-        
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
         
         model.addAttribute("asker", askerRepo.findByUsername(username));
         model.addAttribute("insider", username);
+        //model.addAttribute("comments", pollRepo.findOne(id).getComments());
         return "poll";
     }
     

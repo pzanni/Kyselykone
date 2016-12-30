@@ -34,8 +34,11 @@
                     <tr> 
                         <th class="cell-stat"></th>
                         <th>
-                            <a href="/polls/add" class="btn btn-default" role="button">Create poll</a>
+                            <div th:if="${loggedin}">
+                                <a href="/polls/add" class="btn btn-default" role="button">Create poll</a>
+                            </div>
                         </th>
+                        
                         <th>
                             <span>Creator</span>
                         </th>
