@@ -16,6 +16,7 @@ public class Poll extends AbstractPersistable<Long>{
     private Asker asker;
     @OneToMany
     private List<Option> options;
+    private String maker;
     
     
     public Poll() {
@@ -34,8 +35,13 @@ public class Poll extends AbstractPersistable<Long>{
         return asker;
     }
     
+    public String getMaker() {
+        return maker;
+    }
+    
     public void setAsker(Asker a) {
         asker = a;
+        maker = a.getUsername();
     }
     
     public List<Option> getOptions() {

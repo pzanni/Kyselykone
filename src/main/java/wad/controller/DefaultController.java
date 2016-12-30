@@ -35,6 +35,7 @@ public class DefaultController {
             Asker asker = new Asker();
             asker.setUsername("milla");
             asker.setPassword("milla");
+            asker.addAuthority("USER");
             askerRepo.save(asker);
             
             Poll poll = new Poll();
@@ -75,6 +76,15 @@ public class DefaultController {
             category.setName("ohjelmointi");
             categoryRepo.save(category);
             
+            category.addPoll(poll2);
+            categoryRepo.save(category);
+            
+            Category category2 = new Category();
+            category2.setName("tarzan");
+            categoryRepo.save(category2);
+            
+            category2.addPoll(poll);
+            categoryRepo.save(category2);
         }
     }
     

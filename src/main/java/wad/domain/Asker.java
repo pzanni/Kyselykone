@@ -1,6 +1,7 @@
 
 package wad.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
@@ -16,7 +17,7 @@ public class Asker extends AbstractPersistable<Long>{
     private List<String> authorities;
     
     public Asker() {
-        
+        authorities = new ArrayList();
     }
     
     public String getUsername() {
@@ -42,4 +43,9 @@ public class Asker extends AbstractPersistable<Long>{
     public void setAuthorities(List<String> au) {
         authorities = au;
     }
+    
+    public void addAuthority(String au) {
+        authorities.add(au);
+    }
+    
 }
