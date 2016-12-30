@@ -16,6 +16,7 @@
                 <nav class="navbar navbar-default pull-right">
                     <div class="container-fluid">
                         <ul class="nav navbar-nav">
+                            <li><p th:text="${insider}" class="navbar-text"></p></li>
                             <li><a href="/polls">Polls</a></li>
                             <li><a href="/categories">Categories</a></li>
                             <li><a href="/register">Register</a></li>
@@ -31,14 +32,14 @@
                     <div class="form-group">
                         <input class="form-control" name="title" placeholder="Title"></input>
                     </div>
-                <!--
+                
                     <div class="form-group">  
                         <label>Choose categories</label>
-                        <select class="selectpicker" name="choises" multiple="true">
-                            <option th:each="category : ${categories}" value="${category.name}" th:text="${category.name}"></option>
+                        <select class="selectpicker" name="choices" multiple="true">
+                            <option th:each="category : ${categories}" th:value="${category.name}" th:text="${category.name}"></option>
                         </select>
                     </div>
-                -->
+                
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Create</button>
                     </div>

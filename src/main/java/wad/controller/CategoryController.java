@@ -2,6 +2,8 @@
 package wad.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +22,8 @@ public class CategoryController {
     @RequestMapping(method = RequestMethod.GET)
     public String categories(Model model) {
         model.addAttribute("categories", categoryRepo.findAll());
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        model.addAttribute("insider", auth.getName());
         return "categories";
     }
     
@@ -27,6 +31,8 @@ public class CategoryController {
     public String category(Model model, @PathVariable Long id) {
         model.addAttribute("category", categoryRepo.findOne(id));
         model.addAttribute("polls", categoryRepo.findOne(id).getPolls());
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        model.addAttribute("insider", auth.getName());
         return "category";
     }
 }

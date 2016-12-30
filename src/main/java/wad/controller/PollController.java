@@ -35,12 +35,8 @@ public class PollController {
     @RequestMapping(method = RequestMethod.GET)
     public String polls(Model model) {
         model.addAttribute("polls", pollRepo.findAll());
-        return "index";
-    }
-    
-    @RequestMapping(value = "/categories", method = RequestMethod.GET)
-    public String categories(Model model) {
-        model.addAttribute("categories", categoryRepo.findAll());
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        model.addAttribute("insider", auth.getName());
         return "index";
     }
     
@@ -49,10 +45,12 @@ public class PollController {
         model.addAttribute("poll", pollRepo.findOne(id));
         model.addAttribute("options", pollRepo.findOne(id).getOptions());
         
+        
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
         
         model.addAttribute("asker", askerRepo.findByUsername(username));
+        model.addAttribute("insider", username);
         return "poll";
     }
     
@@ -72,12 +70,14 @@ public class PollController {
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String addpoll(Model model) {
         model.addAttribute("categories", categoryRepo.findAll());
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        model.addAttribute("insider", auth.getName());
         return "addpoll";
     }
     
     //@Secured("USER")
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String create(Model model, @RequestParam String title) {
+    public String create(Model model, @RequestParam String title, @RequestParam(value="choices") String[] categoryArray) {
         Poll poll = new Poll();
         poll.setTitle(title);
         
@@ -85,10 +85,16 @@ public class PollController {
         if(auth.isAuthenticated()) {
             String username = auth.getName();
             poll.setAsker(askerRepo.findByUsername(username));
+            pollRepo.save(poll);
+            
+            for(String category : categoryArray) {
+                categoryRepo.findByName(category).addPoll(poll);
+                categoryRepo.save(categoryRepo.findByName(category));
+            }
+            
+            model.addAttribute("poll", poll);
         }
         
-        pollRepo.save(poll);
-        model.addAttribute("poll", poll);
         return "redirect:/polls/" + poll.getId();
     }
 }

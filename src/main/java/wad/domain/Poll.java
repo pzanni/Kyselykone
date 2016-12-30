@@ -6,11 +6,13 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import org.hibernate.validator.constraints.Length;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 @Entity
 public class Poll extends AbstractPersistable<Long>{
     
+    @Length(min = 2, max = 150)
     private String title;
     @ManyToOne
     private Asker asker;
