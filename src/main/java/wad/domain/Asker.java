@@ -3,6 +3,7 @@ package wad.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -14,6 +15,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 public class Asker extends AbstractPersistable<Long>{
     
     @NotBlank
+    @Column(unique = true)
     @Length(min = 3, max = 20)
     private String username;
     @NotBlank

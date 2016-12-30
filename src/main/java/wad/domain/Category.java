@@ -36,4 +36,8 @@ public class Category extends AbstractPersistable<Long>{
         polls.add(p);
     }
     
+    public void setPolls(List<Poll> p) {
+        polls = p;
+    }
+    
 }

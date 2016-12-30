@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="wad.controller.PollsTest" time="0.252" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="user.country.format" value="FI"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/pzanni/Kyselykone"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/usr/share/tmcbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/usr/share/tmcbeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/lib/jvm/java-8-oracle/bin/../jre/lib/amd64:/usr/lib/jvm/java-8-oracle/bin/../jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.19.0-69-generic"/>
+    <property name="user.home" value="/home/pzanni"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="pzanni"/>
+    <property name="java.class.path" value="/usr/share/tmcbeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/usr/share/tmcbeans/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="user.language.format" value="fi"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/tmcbeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="statusOk" classname="wad.controller.PollsTest" time="0.252">
+    <error message="Request processing failed; nested exception is java.lang.NullPointerException" type="org.springframework.web.util.NestedServletException">org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at wad.controller.PollController.polls(PollController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+	at wad.controller.PollsTest.statusOk(PollsTest.java:34)
+</error>
+    <system-out><![CDATA[21:57:41.663 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class wad.controller.PollsTest]
+21:57:41.671 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:57:41.682 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:57:41.702 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [wad.controller.PollsTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+21:57:41.713 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [wad.controller.PollsTest], using SpringBootContextLoader
+21:57:41.716 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [wad.controller.PollsTest]: class path resource [wad/controller/PollsTest-context.xml] does not exist
+21:57:41.717 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [wad.controller.PollsTest]: class path resource [wad/controller/PollsTestContext.groovy] does not exist
+21:57:41.717 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wad.controller.PollsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:57:41.718 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [wad.controller.PollsTest]: PollsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:57:41.761 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [wad.controller.PollsTest]
+21:57:41.825 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:57:41.826 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:57:41.827 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:57:41.835 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [wad/controller/] to resources [URL [file:/home/pzanni/Kyselykone/target/test-classes/wad/controller/], URL [file:/home/pzanni/Kyselykone/target/classes/wad/controller/]]
+21:57:41.835 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/pzanni/Kyselykone/target/test-classes/wad/controller]
+21:57:41.835 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/pzanni/Kyselykone/target/test-classes/wad/controller] for files matching pattern [/home/pzanni/Kyselykone/target/test-classes/wad/controller/*.class]
+21:57:41.838 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/pzanni/Kyselykone/target/classes/wad/controller]
+21:57:41.838 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/pzanni/Kyselykone/target/classes/wad/controller] for files matching pattern [/home/pzanni/Kyselykone/target/classes/wad/controller/*.class]
+21:57:41.839 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:wad/controller/*.class] to resources [file [/home/pzanni/Kyselykone/target/test-classes/wad/controller/PollsTest.class], file [/home/pzanni/Kyselykone/target/classes/wad/controller/CategoryController.class], file [/home/pzanni/Kyselykone/target/classes/wad/controller/DefaultController.class], file [/home/pzanni/Kyselykone/target/classes/wad/controller/OptionController.class], file [/home/pzanni/Kyselykone/target/classes/wad/controller/PollController.class], file [/home/pzanni/Kyselykone/target/classes/wad/controller/RegistrationController.class]]
+21:57:41.863 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [wad/] to resources [URL [file:/home/pzanni/Kyselykone/target/test-classes/wad/], URL [file:/home/pzanni/Kyselykone/target/classes/wad/]]
+21:57:41.863 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/pzanni/Kyselykone/target/test-classes/wad]
+21:57:41.863 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/pzanni/Kyselykone/target/test-classes/wad] for files matching pattern [/home/pzanni/Kyselykone/target/test-classes/wad/*.class]
+21:57:41.863 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/pzanni/Kyselykone/target/classes/wad]
+21:57:41.864 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/pzanni/Kyselykone/target/classes/wad] for files matching pattern [/home/pzanni/Kyselykone/target/classes/wad/*.class]
+21:57:41.864 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:wad/*.class] to resources [file [/home/pzanni/Kyselykone/target/classes/wad/KyselykoneApplication.class]]
+21:57:41.898 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/pzanni/Kyselykone/target/classes/wad/KyselykoneApplication.class]
+21:57:41.899 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration wad.KyselykoneApplication for test class wad.controller.PollsTest
+21:57:41.903 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [wad.controller.PollsTest]: using defaults.
+21:57:41.912 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:57:41.932 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@23529fee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4fe767f3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2805c96b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@184cf7cf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2fd6b6c7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bfa9431, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5db250b4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@223f3642, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@38c5cc4c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@37918c79, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@78e94dcf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@233fe9b6]
+21:57:41.941 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [wad.controller.PollsTest]
+21:57:41.941 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [wad.controller.PollsTest]
+21:57:41.945 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class wad.controller.PollsTest]
+21:57:41.945 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:57:41.945 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:57:41.946 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [wad.controller.PollsTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+21:57:41.947 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [wad.controller.PollsTest], using SpringBootContextLoader
+21:57:41.948 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [wad.controller.PollsTest]: class path resource [wad/controller/PollsTest-context.xml] does not exist
+21:57:41.948 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [wad.controller.PollsTest]: class path resource [wad/controller/PollsTestContext.groovy] does not exist
+21:57:41.948 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wad.controller.PollsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:57:41.949 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [wad.controller.PollsTest]: PollsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:57:41.954 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [wad.controller.PollsTest]
+21:57:41.956 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:57:41.956 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:57:41.956 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:57:41.957 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration wad.KyselykoneApplication for test class wad.controller.PollsTest
+21:57:41.959 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [wad.controller.PollsTest]: using defaults.
+21:57:41.962 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:57:41.964 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@433d61fb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5c909414, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4b14c583, org.springframework.test.context.support.DirtiesContextTestExecutionListener@65466a6a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4ddced80, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1534f01b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@78e117e3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2ea227af, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4386f16, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@363ee3a2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4690b489, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@79b06cab]
+21:57:41.965 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [wad.controller.PollsTest]
+21:57:41.965 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [wad.controller.PollsTest]
+21:57:41.966 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [wad.controller.PollsTest]
+21:57:41.966 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [wad.controller.PollsTest]
+21:57:41.969 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5223e5ee testClass = PollsTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@bef2d72 testClass = PollsTest, locations = '{}', classes = '{class wad.KyselykoneApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@646d64ab, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@e320068, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1a8a8f7c], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+21:57:41.970 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [wad.controller.PollsTest]
+21:57:41.970 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [wad.controller.PollsTest]
+21:57:41.995 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:57:41.995 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:57:41.995 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:57:41.996 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+21:57:41.997 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.1.RELEASE)
+
+2016-12-30 21:57:42.418  INFO 30254 --- [           main] wad.controller.PollsTest                 : Starting PollsTest on dhcp-asv-102 with PID 30254 (started by pzanni in /home/pzanni/Kyselykone)
+2016-12-30 21:57:42.420  INFO 30254 --- [           main] wad.controller.PollsTest                 : No active profile set, falling back to default profiles: default
+2016-12-30 21:57:42.679  INFO 30254 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2235eaab: startup date [Fri Dec 30 21:57:42 EET 2016]; root of context hierarchy
+2016-12-30 21:57:43.980  INFO 30254 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Dbcp2; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Dbcp2.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2016-12-30 21:57:44.643  INFO 30254 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4b7d3483] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-30 21:57:44.703  INFO 30254 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [class org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$e42afcbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-30 21:57:44.717  INFO 30254 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [class org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-30 21:57:44.720  INFO 30254 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@348ad293' of type [class org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-30 21:57:44.731  INFO 30254 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [class org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$8ff9f6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-30 21:57:44.785  INFO 30254 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-30 21:57:45.501  INFO 30254 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-30 21:57:45.525  INFO 30254 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-12-30 21:57:45.637  INFO 30254 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2016-12-30 21:57:45.639  INFO 30254 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-30 21:57:45.642  INFO 30254 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-30 21:57:45.711  INFO 30254 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-12-30 21:57:46.166  INFO 30254 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-12-30 21:57:46.784  INFO 30254 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-12-30 21:57:46.817  INFO 30254 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-12-30 21:57:46.854  INFO 30254 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-12-30 21:57:48.406  INFO 30254 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68f79b7c, org.springframework.security.web.context.SecurityContextPersistenceFilter@514dc5f4, org.springframework.security.web.header.HeaderWriterFilter@2125535d, org.springframework.security.web.authentication.logout.LogoutFilter@4a5fab78, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55fe9c2f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@543d2ef3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a247711, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c8e2850, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37142579, org.springframework.security.web.session.SessionManagementFilter@515c732d, org.springframework.security.web.access.ExceptionTranslationFilter@614cbec4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d2af12e]
+2016-12-30 21:57:48.430  INFO 30254 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1534bdc6, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f19d423, org.springframework.security.web.header.HeaderWriterFilter@41f23499, org.springframework.security.web.authentication.logout.LogoutFilter@43090195, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7921a37d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73958426, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23933031, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53079ae6, org.springframework.security.web.session.SessionManagementFilter@31dbf5bb, org.springframework.security.web.access.ExceptionTranslationFilter@38ba8b45, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@441aa7ae]
+2016-12-30 21:57:48.815  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2235eaab: startup date [Fri Dec 30 21:57:42 EET 2016]; root of context hierarchy
+2016-12-30 21:57:48.921  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categories/{id}],methods=[GET]}" onto public java.lang.String wad.controller.CategoryController.category(org.springframework.ui.Model,java.lang.Long)
+2016-12-30 21:57:48.922  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categories],methods=[GET]}" onto public java.lang.String wad.controller.CategoryController.categories(org.springframework.ui.Model)
+2016-12-30 21:57:48.923  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/*]}" onto public java.lang.String wad.controller.DefaultController.handleDefault()
+2016-12-30 21:57:48.924  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/options/{id}/vote],methods=[GET]}" onto public java.lang.String wad.controller.OptionController.vote(java.lang.Long)
+2016-12-30 21:57:48.926  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/polls/{id}],methods=[POST]}" onto public java.lang.String wad.controller.PollController.addOption(org.springframework.ui.Model,java.lang.Long,java.lang.String)
+2016-12-30 21:57:48.926  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/polls],methods=[GET]}" onto public java.lang.String wad.controller.PollController.polls(org.springframework.ui.Model)
+2016-12-30 21:57:48.927  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/polls/add],methods=[GET]}" onto public java.lang.String wad.controller.PollController.addpoll(org.springframework.ui.Model)
+2016-12-30 21:57:48.927  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/polls/add],methods=[POST]}" onto public java.lang.String wad.controller.PollController.create(org.springframework.ui.Model,java.lang.String,java.lang.String[])
+2016-12-30 21:57:48.927  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/polls/{id}],methods=[GET]}" onto public java.lang.String wad.controller.PollController.poll(org.springframework.ui.Model,java.lang.Long)
+2016-12-30 21:57:48.928  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register],methods=[POST]}" onto public java.lang.String wad.controller.RegistrationController.addAsker(wad.domain.Asker,org.springframework.validation.BindingResult)
+2016-12-30 21:57:48.928  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register],methods=[GET]}" onto public java.lang.String wad.controller.RegistrationController.register(org.springframework.ui.Model)
+2016-12-30 21:57:48.930  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-30 21:57:48.931  INFO 30254 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-30 21:57:48.990  INFO 30254 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-30 21:57:48.991  INFO 30254 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-30 21:57:49.061  INFO 30254 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-30 21:57:49.922  INFO 30254 --- [           main] wad.controller.PollsTest                 : Started PollsTest in 7.917 seconds (JVM running for 8.683)
+2016-12-30 21:57:49.962  INFO 30254 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2016-12-30 21:57:49.962  INFO 30254 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-30 21:57:50.008  INFO 30254 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 45 ms
+2016-12-30 21:57:50.056  INFO 30254 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+]]></system-out>
+  </testcase>
+</testsuite>

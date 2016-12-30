@@ -16,4 +16,5 @@
 /home/pzanni/Kyselykone/src/main/java/wad/repository/CommentRepository.java
 /home/pzanni/Kyselykone/src/main/java/wad/domain/Category.java
 /home/pzanni/Kyselykone/src/main/java/wad/KyselykoneApplication.java
+/home/pzanni/Kyselykone/src/main/java/wad/controller/RegistrationController.java
 /home/pzanni/Kyselykone/src/main/java/wad/controller/DefaultController.java
